@@ -22,7 +22,8 @@
     UIToolbar* toolbar = [[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 50)];
     toolbar.barStyle = UIBarStyleBlackTranslucent;
     [toolbar setAutoresizingMask:UIViewAutoresizingFlexibleWidth];
-
+//////////// these are the bar buttons for input accessory view toolbar
+    
    UIBarButtonItem* buttonDone = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(done:)];
     UIBarButtonItem* buttonDone1 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(done:)];
     UIBarButtonItem* buttonDone2 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(done:)];
@@ -31,10 +32,10 @@
     UIBarButtonItem* buttonDone5 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemPause target:self action:@selector(done:)];
     UIBarButtonItem* buttonDone6 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(done:)];
     UIBarButtonItem* buttonDone7 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemReply target:self action:@selector(done:)];
-    UIBarButtonItem* buttonDone8 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemTrash target:self action:@selector(done:)];
+//    UIBarButtonItem* buttonDone8 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemTrash target:self action:@selector(done:)];
 
 
-    NSArray *itemsArray = [NSArray arrayWithObjects:buttonDone,buttonDone1,buttonDone2,buttonDone3,buttonDone4,buttonDone5,buttonDone6,buttonDone7,buttonDone8, nil];
+    NSArray *itemsArray = [NSArray arrayWithObjects:buttonDone,buttonDone1,buttonDone2,buttonDone3,buttonDone4,buttonDone5,buttonDone6,buttonDone7, nil];
     
     UIScrollView *scrollView = [[UIScrollView alloc] init];
     scrollView.frame = toolbar.frame;
